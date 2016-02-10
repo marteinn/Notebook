@@ -1,6 +1,4 @@
-# Django - Tips
-
-## Tip: Mocking unittest translations in Django
+# Tip: Mocking unittest translations in Django
 
 This is a simple example on how you can mock gettext/translation in django.
 
