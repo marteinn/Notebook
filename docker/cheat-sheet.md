@@ -35,11 +35,14 @@
 ## Docker-machine
 - Create default virtualbox machine
     - `docker-machine create --driver virtualbox default`
-- `docker-machine ssh default`
-- `docker-machine ls`
+- SSH into machine
+    - `docker-machine ssh default`
+- List machines
+    - `docker-machine ls`
 - Show machine ip
     - `docker-machine ip <name>`
-- `eval "$(docker-machine env default)"`
+- Run commands against machine
+    - `eval "$(docker-machine env default)"`
 
 
 ## Docker compose
@@ -54,7 +57,7 @@
     - `docker stop $(docker-compose ps -q)`
 - Rebuild images
     - `docker-compose build`
-- Remove containers
+- Remove all stopped containers
     - `docker rm $(docker-compose ps -q)`
 - Get container id by compose name
     - `$(docker-compose ps -q <name>)`
