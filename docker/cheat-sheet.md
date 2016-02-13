@@ -65,3 +65,5 @@
     - `docker exec $(docker-compose ps -q <name>) ls -la`
 
 
+## References
+- https://github.com/wsargent/docker-cheat-sheet
