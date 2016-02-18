@@ -1,20 +1,31 @@
 # Docker - Cheat Sheet
 
 ## Docker
+
+### Containers
 - Show running containers
     - `docker ps`
 - Stop all containers
     - `docker stop $(docker ps -a -q)`
+- Remove all containers
+    - `docker rm $(docker ps -a -q)`
+- Remove all stopped containers:
+    - `docker rm $(docker ps -a -q)`
+- Run container in shell
+    - `docker exec -it <container_id> bash`
+- Run command on container
+    - Example: `docker exec <container_id> django-admin.py startproject composeexample .`
+    - Example: `docker exec <container_id> web python manage.py migrate`
+
+#### Images
 - Show all images
     - `docker images`
 - Remove all images
     - `docker rmi $(docker images -q)`
-- Remove all containers
-    - `docker rm $(docker ps -a -q)`
+- Remove all <none> images
+    - `docker rmi $(docker images | grep "^<none>" | awk "{print $3}")`
 - Remove all dangling images
     - `docker images -q --filter "dangling=true" | xargs docker rmi`
-- Remove all stopped containers:
-    - `docker rm $(docker ps -a -q)`
 - Remove image
     - `docker rmi <image id>`
 - Build image
@@ -23,11 +34,6 @@
     - `docker build -t <user>/<imagename>:<version> <path_to_image_dir>`
     Example:
         - `docker build -t marteinn/ansible-example-django:v1.0.0 django`
-- Run container in shell
-    - `docker exec -it <container_id> bash`
-- Run command on container
-    - Example: `docker exec <container_id> django-admin.py startproject composeexample .`
-    - Example: `docker exec <container_id> web python manage.py migrate`
 - Keep the five most recent versions of an image (excluding latest)
     - `docker images | grep marteinn/ansible-example-django | grep -v latest | sort -r | awk '{print "marteinn/ansible-example-django:"$2}' | tail -n +6 | xargs -n 1 docker rmi`
 
