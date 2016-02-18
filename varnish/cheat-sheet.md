@@ -11,8 +11,11 @@
 
 ## Cache
 
-#### Ban domin
+#### Ban (ban certain content from being served from your cache)
 - `curl -X BAN http://domain.com/*`
 
+#### Purge (pick out an object from the cache and discard)
+- `curl -X PURGE http://domain.com`
 
-# TODO: Add explanation about purge vs ban
+## Reference
+- [Purging and banning](https://www.varnish-cache.org/docs/3.0/tutorial/purging.html)
