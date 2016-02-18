@@ -1,5 +1,6 @@
 # Tip - Install wp-cli on remote machine
 
+#### Install and set permissions
 
 ```
 cd ~
@@ -11,18 +12,20 @@ mkdir ~/.wp-cli
 mv wp-cli.phar ~/.wp-cli/wp
 ```
 
+#### Export wp
 ```
 vim ~/.bashrc
 export PATH="$PATH:$HOME/.wp-cli"
 ```
 
+#### Autoload bash from base_profile
 ```
 if [ -f ~/.bashrc ]; thenj
     source ~/.bashrc
 fi
 ```
 
-- Reload:
+#### Reload:
 ```
 source ~/.bashrc
 /usr/bin/env wp --info
