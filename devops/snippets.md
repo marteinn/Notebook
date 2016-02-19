@@ -94,6 +94,7 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 #### Check if running
 `ps -ef | grep cron | grep -v grep`
 
+
 ## Filesystem
 
 ### Du
@@ -120,6 +121,11 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 
 #### Remove recursive files of a certain format
 `find . -name '*.pyc' -delete`
+
+### Pwd
+
+#### Resolve symlink
+`pwd -P`
 
 
 ## s3cmd
