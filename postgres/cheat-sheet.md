@@ -66,10 +66,12 @@ LOGIN | **NOLOGIN** | Allows the user to log in. Roles without this attribute ar
 ## Import/Export
 
 #### Export
-`pg_dump example_name > example_name.sql`
+  - `pg_dump example_name > example_name.sql`
+  - **Examples:
+  - `pg_dump -h localhost -Fc -f backup.sql.tar.gz -U example_user example_db -x -O`
 
 #### Import
-`psql example_name < example_name.sql`
+- `psql example_name < example_name.sql`
 
 ## Guides
 - [postgresguide.com](http://postgresguide.com)
