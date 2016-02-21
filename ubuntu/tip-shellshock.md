@@ -1,4 +1,4 @@
-# Tip: Shellshock fix for Ubuntu
+# Tip - Shellshock fix for Ubuntu
 
 ### Test if vulnerable
 `env x='() { :;}; echo vulnerable' bash -c "echo this is a test"`
