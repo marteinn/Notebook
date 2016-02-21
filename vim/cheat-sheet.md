@@ -16,3 +16,23 @@
 
 ### Visually select paragraph
 `vap`
+
+
+## Window
+
+### Maximize vertically
+`ctrl+W` `_`
+
+### Maximize horizontally
+`ctrl+W` `|`
+
+### Restore to even sizes
+`ctrl+W` `=`
+
+## Tabs
+
+### Open buffer in new split
+`:tab split`
+
+### Close tab
+`:tabc`
