@@ -1,38 +1,43 @@
 # Vim - Cheat Sheet
 
-## Yank
+### Yank
 
-### Yank string
+#### Yank string
 `2yi"` / `2yi'`
 
-### Yank within parantheses
+#### Yank within parantheses
 `yi)`
 
-### Yank within brackets
+#### Yank within brackets
 `yi]`
 
-### Toggle fold
+#### Toggle fold
 `za`
 
-### Visually select paragraph
+#### Visually select paragraph
 `vap`
 
 
-## Window
+### Window
 
-### Maximize vertically
+#### Maximize vertically
 `ctrl+W` `_`
 
-### Maximize horizontally
+#### Maximize horizontally
 `ctrl+W` `|`
 
-### Restore to even sizes
+#### Restore to even sizes
 `ctrl+W` `=`
 
-## Tabs
+### Tabs
 
-### Open buffer in new split
+#### Open buffer in new split
 `:tab split`
 
-### Close tab
+#### Close tab
 `:tabc`
+
+## Case
+
+#### Toggle case
+`g~`
