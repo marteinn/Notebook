@@ -13,11 +13,14 @@ chmod 600 ~/.ssh/authorized_keys
 
 Then append your key to `authorized_keys`
 
+
 ## Autmatically
 
 This will automatically append your key to authorized_keys.
 
 `ssh-copy-id user@example.com`
 
+
 ### Installing
+
 - OSX: `brew install ssh-copy-id`
