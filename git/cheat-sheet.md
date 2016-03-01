@@ -38,6 +38,9 @@
 ### Delete branch
 `git branch -d [branch]`
 
+### Delete remote branch
+`git push origin --delete [branch]`
+
 ### Create branch and perform checkout
 `git checkout -b [branch]`
 
