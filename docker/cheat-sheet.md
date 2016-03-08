@@ -18,6 +18,8 @@
     - Example: `docker exec <container_id> web python manage.py migrate`
 - Copy files from container to host
     - `docker cp container_id:/container/path/test ./test`
+- Copy files from host to container
+    - `docker cp test.txt container_id:/test.txt`
 
 #### Images
 - Show all images
