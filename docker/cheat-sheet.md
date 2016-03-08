@@ -16,6 +16,8 @@
 - Run command on container
     - Example: `docker exec <container_id> django-admin.py startproject composeexample .`
     - Example: `docker exec <container_id> web python manage.py migrate`
+- Copy files from container to host
+    - `docker cp container_id:/container/path/test ./test`
 
 #### Images
 - Show all images
