@@ -1,5 +1,6 @@
 # Git - Cheat Sheet
 
+
 ## Commits
 
 #### Show commits
@@ -117,3 +118,8 @@ git filter-branch --force --index-filter \
 --prune-empty --tag-name-filter cat -- --all
 ```
 
+
+## Repositories
+
+#### Change remote url
+`git remote set-url origin git@github.com:USERNAME/OTHERREPOSITORY.git`
