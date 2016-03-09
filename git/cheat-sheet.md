@@ -118,6 +118,8 @@ git filter-branch --force --index-filter \
 --prune-empty --tag-name-filter cat -- --all
 ```
 
+Read more here: [https://help.github.com/articles/remove-sensitive-data/](https://help.github.com/articles/remove-sensitive-data/)
+
 
 ## Repositories
 
