@@ -51,6 +51,9 @@
 #### Push and remove local branch
 `git push origin :[branch] `
 
+#### Show remote branches
+`git branch -a`
+
 
 ## Tags
 
