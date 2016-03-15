@@ -72,6 +72,10 @@ LOGIN | **NOLOGIN** | Allows the user to log in. Roles without this attribute ar
 
 #### Import
 - `psql example_name < example_name.sql`
+- **Or**:
+- `pg_restore --clean -h localhost -d postgres_db -U postgres_user "/shared/dump.sql"`
+- **Or**:
+- `psql -U postgres_user -d postgres_db -f /shared/dump.sql`
 
 ## Guides
 - [postgresguide.com](http://postgresguide.com)
