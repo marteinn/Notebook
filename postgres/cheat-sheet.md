@@ -67,7 +67,7 @@ LOGIN | **NOLOGIN** | Allows the user to log in. Roles without this attribute ar
 
 #### Export
   - `pg_dump example_name > example_name.sql`
-  - **Examples:
+  - **Examples**:
   - `pg_dump -h localhost -Fc -f backup.sql.tar.gz -U example_user example_db -x -O`
 
 #### Import

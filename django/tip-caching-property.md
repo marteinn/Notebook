@@ -1,6 +1,6 @@
-# Tip - Caching a property
+# Tip: Caching a property
 
-For some reason I always tend to forget this little snippet.
+How to cache a method response
 
 
 ```python
