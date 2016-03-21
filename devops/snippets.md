@@ -127,11 +127,17 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 #### Resolve symlink
 `pwd -P`
 
+### Namei
+
+#### Check file permissions in path
+`namei -om /path/to/check`
+
 
 ## s3cmd
 
 #### Put folder to bucket
 `s3cmd -P put --recursive /localfolder s3://bucketname/bucketfolder`
+
 
 ## SSH
 
