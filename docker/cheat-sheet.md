@@ -53,6 +53,14 @@
     - `docker-machine ip <name>`
 - Run commands against machine
     - `eval "$(docker-machine env default)"`
+- Resize virtualbox machine
+    - `docker-machine stop`
+    - `VBoxManage modifyvm default --memory 4096`
+    - `VBoxManage modifyvm default --cpus 2`
+    - `docker-machine start`
+- Show available space
+    - `docker-machine ssh`
+    - `df -h`
 
 
 ## Docker compose
