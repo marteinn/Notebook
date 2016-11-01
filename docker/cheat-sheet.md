@@ -20,6 +20,8 @@
     - `docker cp container_id:/container/path/test ./test`
 - Copy files from host to container
     - `docker cp test.txt container_id:/test.txt`
+- Attach to container
+    - `docker attach <container_id> --sig-proxy=false`
 
 #### Images
 - Show all images
@@ -61,6 +63,8 @@
 - Show available space
     - `docker-machine ssh`
     - `df -h`
+- Run container with service ports exposed
+    - `docker-compose run --service-ports <container_name>`
 
 
 ## Docker compose
