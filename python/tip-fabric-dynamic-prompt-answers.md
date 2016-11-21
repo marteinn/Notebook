@@ -1,4 +1,4 @@
-# Tip: Dynamic prompt answers in Fabric
+# Tip - Dynamic prompt answers in Fabric
 
 I couldn't find much examples on how you supply [prompt](http://docs.fabfile.org/en/1.10/usage/env.html#prompts) values in Fabric, so here's a small rundown.
 
