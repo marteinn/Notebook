@@ -2,8 +2,8 @@
 
 This is a list with top-of-mind hackday projects
 
-- [ ] Fully implement scp support to `Fabrik`
-- [ ] Merge `Fabrik-cli` into `Fabrik`
+- [x] Fully implement scp support to `Fabrik`
+- [x] Merge `Fabrik-cli` into `Fabrik`
 - [ ] Add working Node.js implementation to `django_react_templatetags`
 - [ ] Stream field block for `wagtail-geo-widget`
 - [ ] Implement additional image providers to `wagtail-alt-generator`
