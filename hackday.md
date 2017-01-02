@@ -11,5 +11,6 @@ This is a list with top-of-mind hackday projects
 - [ ] Work on `Delicious-Elixir`
 - [ ] Create standalone wagtail package för `slugserve`
 - [ ] Add mapbox support to `wagtail-geo-widget`
-- [ ] Create web app for searching and demoing `the-big-username-blacklist`
+- [x] Create web app for searching and demoing `the-big-username-blacklist`
 - [ ] Create multisearch package for wagtail
+- [ ] Update error reporting in `Fabrik`
