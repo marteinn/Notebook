@@ -13,4 +13,4 @@ This is a list with top-of-mind hackday projects
 - [ ] Add mapbox support to `wagtail-geo-widget`
 - [x] Create web app for searching and demoing `the-big-username-blacklist`
 - [ ] Create multisearch package for wagtail
-- [ ] Update error reporting in `Fabrik`
+- [x] Update error reporting in `Fabrik`
