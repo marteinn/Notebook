@@ -26,13 +26,13 @@
 
 ### Roles
 
-On role | Off role | Description  |
---- | --- | --- | ---
-SUPERUSER | **NOSUPERUSER** | A superuser can override all access restrictions within the database | NOSUPERUSER
-CREATEDB | **NOCREATEDB** | Let's a user create databases
-CREATEROLE | **NOCREATEROLE** | Permits user to create new roles (that is, execute CREATE ROLE). A role with CREATEROLE privilege can also alter and drop other roles
-**INHERIT** | NOINHERIT | A role with the INHERIT attribute can automatically use whatever database privileges have been granted to all roles it is directly or indirectly a member of
-LOGIN | **NOLOGIN** | Allows the user to log in. Roles without this attribute are useful for managing database privileges.
+| On role       | Off role           | Description  |
+| ------------- |:-------------:|:-----|
+| SUPERUSER | **NOSUPERUSER** | A superuser can override all access restrictions within the database |
+| CREATEDB | **NOCREATEDB**  |   Let's a user create databases |
+| CREATEROLE | **NOCREATEROLE**  | Permits user to create new roles (that is, execute CREATE ROLE). A role with CREATEROLE privilege can also alter and drop other roles |
+| **INHERIT** | NOINHERIT | A role with the INHERIT attribute can automatically use whatever database privileges have been granted to all roles it is directly or indirectly a member of |
+| LOGIN | **NOLOGIN** | Allows the user to log in. Roles without this attribute are useful for managing database privileges.
 
 ##  Databases
 
