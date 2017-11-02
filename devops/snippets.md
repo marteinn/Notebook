@@ -117,6 +117,9 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 #### Check inodes used
 `df -i`
 
+#### Check space left
+`df -h`
+
 ### Find
 
 #### Remove recursive files of a certain format
