@@ -24,6 +24,9 @@
 #### Let user create databases
   - psql=# `ALTER USER example_user WITH CREATEDB`;
 
+#### Drop user
+  - psql=# `DROP USER example_user;`
+
 ### Roles
 
 | On role       | Off role           | Description  |
