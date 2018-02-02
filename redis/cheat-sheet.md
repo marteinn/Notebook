@@ -3,10 +3,13 @@
 ## Common commands
 
 #### Select database
-   - `SELECT 1` (1 is default)
+`SELECT 1` (1 is default)
 
 #### Show all keys in database
-   - `KEYS *`
+`KEYS *`
 
 #### Delete key from database
-   - `DEL "<keyname>"`
+`DEL "<keyname>"`
+
+#### Show key value
+`GET "<keyname>"`
