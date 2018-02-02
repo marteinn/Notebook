@@ -36,3 +36,4 @@ Simple Job Processing in Elixir with Mnesia
 - [Background processing using Elixir, GenServer and the Erlang queue module
 ](https://hackernoon.com/background-processing-using-elixir-genserver-and-the-erlang-queue-class-8d476d4942c2)
 - [A nice guide with genserver video tutorials](https://www.youtube.com/channel/UCp01DFl8kp-239gW289C0ew)
+- [Need an Elixir dependency to manage recurring jobs? Not so fast!](https://dockyard.com/blog/2017/11/29/need-an-elixir-dependency-to-manage-recurring-jobs-not-so-fast)
