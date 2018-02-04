@@ -4,12 +4,16 @@
 
 - Creational patterns
     - Patterns that cover object creation
+    - Creational patterns are ones that create objects for you, rather than having you instantiate objects directly
 
 - Structural patterns
     - Describes relationships between entities
+    - They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.
 
 - Behavioral patterns
     - Identifies common communication patterns between objects
+    - Are mostly concerned with communication between objects.
+
 
 ## Patterns
 
@@ -21,6 +25,9 @@
         - Each "product" has a factory
         - Source [1](https://sourcemaking.com/design_patterns/abstract_factory), [2](https://github.com/faif/python-patterns/blob/master/creational/abstract_factory.py)
     - Builder
+        - Decouples the creation of a complex object and its representation.
+        - Nice when you want to avoid a huge list of constructors for a class
+        - Source [1](https://sourcemaking.com/design_patterns/builder), [2](https://en.wikipedia.org/wiki/Builder_pattern), [3](https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Builder), [4](https://github.com/faif/python-patterns/blob/master/creational/builder.py)
     - Factory method
         - Define a interface for creating object, but let subclass decide class
         - `new` considered harmful
@@ -29,6 +36,11 @@
         - With this method you can implement a object pool or return the same object depending pn arguments
         - Source [1](https://sourcemaking.com/design_patterns/factory_method), [2](https://github.com/faif/python-patterns/blob/master/creational/factory_method.py)
     - Prototype
+        - Creates new object instances by cloning prototype.
+        - The new operator considered harmful
+        - Uses clone to create new instances
+        - Javascript is a prototypal language
+        - Source [1](https://en.wikipedia.org/wiki/Prototype_pattern), [2](https://github.com/faif/python-patterns/blob/master/creational/prototype.py), [3](https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Prototype), [4](https://sourcemaking.com/design_patterns/prototype)
     - Singleton
         - Ensure a class has only one instance, and provide a global point of access to it.
         - Is created in a lazy manner
@@ -56,6 +68,10 @@
         - Example: Starting a computer
         - Source [1](https://github.com/faif/python-patterns/blob/master/structural/facade.py), [2](https://sourcemaking.com/design_patterns/facade)
     - Flyweight
+        - Minimizes memory usage by sharing data with other similar objects.
+        - Is similar to [hash consing](https://en.wikipedia.org/wiki/Hash_consing)
+        - Is used in web browsers to avoid loading the same image twice
+        - Source [1](https://github.com/faif/python-patterns/blob/master/structural/flyweight.py), [2](https://en.wikipedia.org/wiki/Flyweight_pattern), [3](https://sourcemaking.com/design_patterns/flyweight)
     - Proxy
 
 - Behavioral patterns
@@ -64,12 +80,12 @@
     - Interpreter
     - Iterator
         - Lets you access elements of an aggregate object sequentially without exposing the underlying structure of the object.
-        ... or in less words "Traverses a container and accesses the container's elements."
+        - ...or in less words "Traverses a container and accesses the container's elements."
         - Source [1](https://sourcemaking.com/design_patterns/iterator), [2](https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Iterator), [3](https://github.com/faif/python-patterns/blob/master/behavioral/iterator.py)
     - Mediator
     - Momento
     - Observer (or `Publish/Subscribe` or `Event Listener`)
-        - Fefines a one-to-many relationship so that when one object changes state (like bidding, where bidders are observers and auctioneer are subject)
+        - Defines a one-to-many relationship so that when one object changes state (like bidding, where bidders are observers and auctioneer are subject)
         - or in less words: "Maintains a list of dependents and notifies them of any state changes."
         - Defines a subject and observers
             - Subject: Reponsible for maintaining a list of observers and notifying them
@@ -93,3 +109,4 @@
 
 - Sources:
     - [Gang of Four Design Patterns](http://www.blackwasp.co.uk/gofpatterns.aspx) - The 23 original patterns
+    - [Wikipedia / Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns)
