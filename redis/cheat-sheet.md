@@ -13,3 +13,7 @@
 
 #### Show key value
 `GET "<keyname>"`
+
+
+#### Get key type
+`TYPE "<keyname>"`
