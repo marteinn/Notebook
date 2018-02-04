@@ -73,6 +73,9 @@
         - Is used in web browsers to avoid loading the same image twice
         - Source [1](https://github.com/faif/python-patterns/blob/master/structural/flyweight.py), [2](https://en.wikipedia.org/wiki/Flyweight_pattern), [3](https://sourcemaking.com/design_patterns/flyweight)
     - Proxy
+        - Provides an interface to a resource that is expensive to duplicate.
+		- Adapter provides a different interface to its subject. Proxy provides the same interface. Decorator provides an enhanced interface.
+        - Source [1](https://en.wikibooks.org/wiki/Computer_Science_Design_Patterns/Proxy), [2](https://en.wikipedia.org/wiki/Proxy_pattern), [3](https://sourcemaking.com/design_patterns/proxy), [4](https://github.com/faif/python-patterns/blob/master/structural/proxy.py)
 
 - Behavioral patterns
     - Chain of Responsibility
