@@ -24,7 +24,7 @@ mysql> `CREATE DATABASE <database>;`
 mysql> `DROP DATABASE <database>;`
 
 #### Associate user to database
-mysql> `GRANT ALL PRIVILEGES ON <database>.* TO '<username>'@'localhost' identified by '<password>';`
+mysql> `GRANT ALL PRIVILEGES ON <database>.* TO '<username>'@'localhost' IDENTIFIED BY '<password>';`
 
 #### Import sql dump into database
 mysql> `mysql -u <username> -p -h localhost <database> < data.sql`
