@@ -19,7 +19,7 @@ class ClosepollTest(TestCase):
 
 ## Overriding auto_now_add, auto_now field values
 
-```
+```python
 from datetime import timedelta
 import mock  # pip install mock
 
@@ -41,3 +41,14 @@ class AnonymizeOrderaTest(TestCase):
 ```
 
 - [Reference](https://devblog.kogan.com/blog/testing-auto-now-datetime-fields-in-django)
+
+
+## Passing a proper json payload through client.post
+
+```python
+resp = self.client.post(
+    reverse("exampleapp:my_route"),
+    json.dumps({"first_name": "Martin", "last_name": "Sandström"}),
+    content_type="application/json",
+)
+```
