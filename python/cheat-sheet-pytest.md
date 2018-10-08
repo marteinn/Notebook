@@ -11,3 +11,8 @@
 #### Only run the last failed tests
 
 - `py.test --last-failed`
+
+
+#### Show captured data (print etc)
+
+- `py.test -s`
