@@ -128,3 +128,8 @@ Read more here: [https://help.github.com/articles/remove-sensitive-data/](https:
 
 #### Change remote url
 `git remote set-url origin git@github.com:USERNAME/OTHERREPOSITORY.git`
+
+
+## Links
+
+- [Git Flight Rules](https://github.com/k88hudson/git-flight-rules/)
