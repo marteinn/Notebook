@@ -52,3 +52,23 @@ resp = self.client.post(
     content_type="application/json",
 )
 ```
+
+
+## Testing email
+
+```python
+from django.test import TestCase
+from django.core import mail
+
+
+class TestFeedbackApi(TestCase):
+    def test_feedback_gets_sent(self):
+        self.assertEqual(len(mail.outbox), 0)
+
+        # Some action that triggers email sent
+
+        self.assertEquals(len(mail.outbox), 1)
+
+        self.assertEqual(mail.outbox[0].subject, "Mail subject")
+        self.assertEqual(mail.outbox[0].from_email, "no-reply@email.com)
+```python
