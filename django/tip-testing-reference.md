@@ -70,5 +70,5 @@ class TestFeedbackApi(TestCase):
         self.assertEquals(len(mail.outbox), 1)
 
         self.assertEqual(mail.outbox[0].subject, "Mail subject")
-        self.assertEqual(mail.outbox[0].from_email, "no-reply@email.com)
-```python
+        self.assertEqual(mail.outbox[0].from_email, "no-reply@email.com")
+```
