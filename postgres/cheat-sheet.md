@@ -5,6 +5,9 @@
 ### Common commands
 
 #### List users
+- psql=# `\du`
+
+#### List user mappings
   - psql=# `\deu+` _List of user mappings_
   - **(OR)**
   - `psql -c '\deu+'`
