@@ -1,5 +1,12 @@
 # Django - Testing reference
 
+- Testing management command
+- Overriding auto_now_add, auto_now field values
+- Passing a proper json payload through client.post
+- Testing email
+- Testing update on authenticated django rest framework endpoint
+
+
 ## Testing management command
 
 ```python
@@ -71,4 +78,46 @@ class TestFeedbackApi(TestCase):
 
         self.assertEqual(mail.outbox[0].subject, "Mail subject")
         self.assertEqual(mail.outbox[0].from_email, "no-reply@email.com")
+```
+
+
+## Testing update on authenticated django rest framework endpoint
+
+```python
+import json
+
+from django.test import TestCase
+from django.urls import reverse
+from rest_framework.test import APIClient
+
+from myapp.factories import UserFactory
+
+
+class TestUpdateUserProfileApiView(TestCase):
+    def setUp(self):
+        self.client = APIClient()
+
+        self.user = UserFactory(username="test", email="test@test.com")
+
+    def test_non_auth_user(self):
+        url = reverse("myapp:api_update_user")
+        response = self.client.put(
+            url,
+            json.dumps({"email": "random@hello.com"}),
+            content_type="application/json",
+        )
+
+        self.assertEqual(response.status_code, 403)
+
+    def test_update_auth_user(self):
+        self.client.force_authenticate(user=self.user)
+
+        url = reverse("myapp:api_update_user")
+        response = self.client.put(url, {
+            "first_name": "Random",
+        })
+        self.user.refresh_from_db()
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(self.user.first_name, "Random")
 ```
