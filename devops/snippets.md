@@ -71,7 +71,7 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 ## Domains
 
 #### Lookup domain through Google DNS
-`nslookup <domain> 8.8.8.8`
+`nslookup -debug <domain> 8.8.8.8`
 
 #### Lookup dns name servers
 `dig +recurse +trace <domain> any`
