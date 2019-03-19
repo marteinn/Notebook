@@ -5,6 +5,7 @@
 - Passing a proper json payload through client.post
 - Testing email
 - Testing update on authenticated django rest framework endpoint
+- Sending a file through a DRF endpoint
 
 
 ## Testing management command
@@ -120,4 +121,31 @@ class TestUpdateUserProfileApiView(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(self.user.first_name, "Random")
+```
+
+## Sending a file through a DRF endpoint
+
+```python
+import tempfile
+from PIL import Image
+
+from django.test import TestCase
+from rest_framework.test import APIClient
+
+class TestUpdateUserProfileApiView(TestCase):
+    def setUp(self):
+        self.client = APIClient()
+
+    def test_non_auth_user(self):
+        image = Image.new('RGB', (100, 100))
+        tmp_file = tempfile.NamedTemporaryFile(suffix='.jpg')
+        image.save(tmp_file)
+
+        url = "/my_endpoint/"
+        with open(tmp_file.name, 'rb') as image_data:
+            response = self.client.post(
+                url, {"image": image_data}, format='multipart'
+            )
+
+        self.assertEqual(response.status_code, 201)
 ```
