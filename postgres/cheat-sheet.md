@@ -83,5 +83,15 @@
 - **Or**:
 - `psql -U postgres_user -d postgres_db -f /shared/dump.sql`
 
+
+## Versions
+
+### Show postgres (server) version
+- `pg_config --version`
+
+### Show postgres (client) version
+- `psql --version`
+
+
 ## Guides
 - [postgresguide.com](http://postgresguide.com)
