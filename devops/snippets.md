@@ -152,3 +152,9 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 
 #### Generate htpasswd-file
 `htpasswd -nb username password > .htpasswd`
+
+
+## SMTP
+
+#### Check if we have access to smtp server
+`telnet mx1.example.com 25`
