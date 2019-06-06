@@ -1,4 +1,4 @@
-# aws cli - Cheat sheet
+# aws cli / s3cmd - Cheat sheet
 
 ## Configure
 
@@ -24,3 +24,6 @@ export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ### Remove file from bucket
 `aws s3 rm s3://<BUCKET_NAME>/path/subdir/<FILENAME>`
+
+### Retrive oldest file in bucket (s3cmd)
+`s3cmd ls s3://<BUCKET_NAME>/path/ | sort | head -n 1`
