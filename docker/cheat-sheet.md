@@ -5,12 +5,16 @@
 ### Containers
 - Show running containers
     - `docker ps`
+- Search container by name
+    - `docker ps -a | grep "needle"`
 - Stop all containers
     - `docker stop $(docker ps -a -q)`
-- Remove all containers
-    - `docker rm $(docker ps -a -q)`
+- Stop all containers by name
+    - `docker ps -a | grep "study" | awk '{print $1}' | xargs docker stop`
 - Remove all stopped containers:
     - `docker rm $(docker ps -a -q)`
+- Remove containers by search name
+    - `docker ps -a | grep "needle" | awk '{print $1}' | xargs docker rm`
 - Run container in shell
     - `docker exec -it <container_id> bash`
 - Run command on container
@@ -26,6 +30,8 @@
 #### Images
 - Show all images
     - `docker images`
+- Search images by name
+    - `docker images -a | grep "myname"`
 - Remove all images
     - `docker rmi $(docker images -q)`
 - Remove all <none> images
