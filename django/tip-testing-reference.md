@@ -1,7 +1,7 @@
 # Django - Testing reference
 
-- Testing management command
-- Overriding auto_now_add, auto_now field values
+- [Testing management command](#testing-management-command)
+- [Overriding auto_now_add, auto_now field values](#overriding-auto_now_add-auto_now-field-values)
 - Passing a proper json payload through client.post
 - Testing email
 - Testing update on authenticated django rest framework endpoint
