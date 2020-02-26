@@ -49,6 +49,24 @@
 - Keep the five most recent versions of an image (excluding latest)
     - `docker images | grep marteinn/ansible-example-django | grep -v latest | sort -r | awk '{print "marteinn/ansible-example-django:"$2}' | tail -n +6 | xargs -n 1 docker rmi`
 
+## Docker compose
+- Start containers
+    - `docker-compose up`
+- Run command on container
+    - `docker-compose run web django-admin.py startproject composeexample .`
+    - `docker-compose run web python manage.py migrate`
+- Show containers
+    - `docker-compose ps`
+- Stop all containers
+    - `docker stop $(docker-compose ps -q)`
+- Rebuild images
+    - `docker-compose build`
+- Remove all stopped containers
+    - `docker rm $(docker-compose ps -q)`
+- Get container id by compose name
+    - `$(docker-compose ps -q <name>)`
+- Run exec by compose name
+    - `docker exec $(docker-compose ps -q <name>) ls -la`
 
 ## Docker-machine
 - Create default virtualbox machine
@@ -71,27 +89,6 @@
     - `df -h`
 - Run container with service ports exposed
     - `docker-compose run --service-ports <container_name>`
-
-
-## Docker compose
-- Start containers
-    - `docker-compose up`
-- Run command on container
-    - `docker-compose run web django-admin.py startproject composeexample .`
-    - `docker-compose run web python manage.py migrate`
-- Show containers
-    - `docker-compose ps`
-- Stop all containers
-    - `docker stop $(docker-compose ps -q)`
-- Rebuild images
-    - `docker-compose build`
-- Remove all stopped containers
-    - `docker rm $(docker-compose ps -q)`
-- Get container id by compose name
-    - `$(docker-compose ps -q <name>)`
-- Run exec by compose name
-    - `docker exec $(docker-compose ps -q <name>) ls -la`
-
 
 ## References
 - https://github.com/wsargent/docker-cheat-sheet
