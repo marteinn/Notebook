@@ -36,6 +36,8 @@
     - `docker rmi $(docker images -q)`
 - Remove all <none> images
     - `docker rmi $(docker images | grep "^<none>" | awk "{print $3}")`
+- Remove by search term
+    - `docker images -a | grep "searchterm" | awk '{print $3}' | xargs docker rmi`
 - Remove all dangling images
     - `docker images -q --filter "dangling=true" | xargs docker rmi`
 - Remove image
