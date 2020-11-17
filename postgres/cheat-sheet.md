@@ -95,3 +95,7 @@
 
 ## Guides
 - [postgresguide.com](http://postgresguide.com)
+
+
+## Other Cheat Sheets
+- [tomcam.github.io/postgres/](https://tomcam.github.io/postgres/)
