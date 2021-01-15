@@ -70,6 +70,12 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 
 ## Domains
 
+#### Check domain TTL
+`dig +nocmd +noall +answer mydomain.se`
+
+#### Check domain TTL on another nameserver
+`dig +nocmd +noall +answer @ns1.example.se mydomain.se`
+
 #### Lookup domain through Google DNS
 `nslookup -debug <domain> 8.8.8.8`
 
