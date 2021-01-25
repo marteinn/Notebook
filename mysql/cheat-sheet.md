@@ -15,7 +15,7 @@ mysql> `SELECT User FROM mysql.user;`
 mysql> `SELECT * FROM mysql.db WHERE Db = '<database>';`
 
 #### Assign PROCESS privilege for user to database
-mysql> `GRANT PROCESS ON <database>.* to '<username>'@'localhost';`
+mysql> `GRANT PROCESS ON *.* to '<username>'@'localhost';`
 
 
 ## Database
