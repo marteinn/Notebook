@@ -14,6 +14,9 @@ mysql> `SELECT User FROM mysql.user;`
 #### Show users who has access to db
 mysql> `SELECT * FROM mysql.db WHERE Db = '<database>';`
 
+#### Assign PROCESS privilege for user to database
+mysql> `GRANT PROCESS ON <database>.* to '<username>'@'localhost';`
+
 
 ## Database
 
