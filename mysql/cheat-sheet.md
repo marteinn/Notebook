@@ -24,7 +24,12 @@ mysql> `CREATE DATABASE <database>;`
 mysql> `DROP DATABASE <database>;`
 
 #### Associate user to database
+
+##### Mysql
 mysql> `GRANT ALL PRIVILEGES ON <database>.* TO '<username>'@'localhost' IDENTIFIED BY '<password>';`
+
+##### MariaDB
+mysql> `GRANT ALL ON <database>.* TO '<username>'@'localhost';`
 
 #### Import sql dump into database
 mysql> `mysql -u <username> -p -h localhost <database> < data.sql`
