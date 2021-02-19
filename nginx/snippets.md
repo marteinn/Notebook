@@ -2,7 +2,7 @@
 
 ## Logging
 
-### Show show many times certain ips has requested route
+### Show how many times certain IP:s has requested route
 
 ```
 >>> cat /var/log/nginx/access.log | grep myroute | awk '{print $3}' | sort | uniq -c | sort -nr
