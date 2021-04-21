@@ -15,3 +15,9 @@
      44 xx.xx.xx.xx
      34 xx.xx.xx.xx
 ```
+
+### Show all 404 routes sorted by number of requests
+
+```
+cat /var/log/nginx/access.log | awk '/" 404 / {print $8}' | sort | uniq -c | sort -n
+```
