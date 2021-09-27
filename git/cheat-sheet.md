@@ -123,6 +123,10 @@ git filter-branch --force --index-filter \
 
 Read more here: [https://help.github.com/articles/remove-sensitive-data/](https://help.github.com/articles/remove-sensitive-data/)
 
+#### Retrive files from another branch
+```
+git checkout master components/MegaMenu
+```
 
 ## Repositories
 
