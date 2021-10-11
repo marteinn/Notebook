@@ -172,3 +172,8 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 
 #### Inspect service
 `systemctl status myservice.service`
+
+
+## SSL
+#### Show cert info
+`openssl s_client -showcerts -connect example.com:443`
