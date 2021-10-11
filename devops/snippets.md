@@ -164,3 +164,11 @@ top -p `pgrep mysql | tr "\\n" "," | sed 's/,$//'`
 
 #### Check if we have access to smtp server
 `telnet mx1.example.com 25`
+
+## systemctl
+
+#### Show all services
+`service --status-all`
+
+#### Inspect service
+`systemctl status myservice.service`
