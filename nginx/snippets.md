@@ -21,3 +21,10 @@
 ```
 cat /var/log/nginx/access.log | awk '/" 404 / {print $8}' | sort | uniq -c | sort -n
 ```
+
+
+### Show most called routes on combined .log and compressed log files
+
+```
+{ cat /var/log/nginx/access.log ; zcat /var/log/nginx/access.log.1.gz ; zcat /var/log/nginx/access.log.2.gz ; } | awk '{print $8}' | sort | uniq -c | sort -n
+```
