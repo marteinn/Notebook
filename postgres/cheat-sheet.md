@@ -69,6 +69,21 @@
   - _(First connect to db)_
   - psql=# `dt`
 
+### Show all tables and their size
+
+```
+select
+  table_name,
+  pg_size_pretty(pg_relation_size(quote_ident(table_name))),
+  pg_relation_size(quote_ident(table_name))
+from information_schema.tables
+where table_schema = 'public'
+order by 3 desc;
+```
+
+(Ref https://stackoverflow.com/a/21738505)
+
+
 ## Import/Export
 
 #### Export
