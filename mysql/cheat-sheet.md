@@ -26,6 +26,22 @@ mysql> `CREATE DATABASE <database>;`
 #### Drop database
 mysql> `DROP DATABASE <database>;`
 
+
+## Collation
+
+#### Show collations
+mysql> `SHOW COLLATION;`
+
+#### Show swedish collations
+mysql> `SHOW COLLATION LIKE '%swedish%';`
+
+
+### Tables
+
+#### Show table structure
+mysql> `SHOW SHOW CREATE TABLE <mytable>`
+
+
 #### Associate user to database
 
 ##### Mysql
