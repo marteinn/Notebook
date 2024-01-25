@@ -1,0 +1,1 @@
+- [Check DNS propagation](https://dnschecker.org/)
