@@ -1,6 +1,6 @@
 # Profiling python
 
-```
+```python
 import cProfile, pstats
 from io import StringIO
 
